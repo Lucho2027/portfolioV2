@@ -20,6 +20,11 @@ export default <Partial<Config>>{
           950: '#052e16'
         }
       }
+    },
+    fontFamily: {
+      montserrat: ['Montserrat', 'sans-serif'],
+      roboto: ['roboto', 'sans-serif'],
+      lato: ['Lato', 'sans-serif']
     }
   }
 };
