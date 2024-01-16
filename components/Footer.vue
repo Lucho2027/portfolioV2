@@ -1,34 +1,26 @@
 <template>
-  <!-- <UContainer class="grid place-content-center text-sm text-primary-500 dark:text-primary-400 h-[10vh]">
-    <h1>HI IM FOOTER</h1>
-    <p>&copy; 2024 Luis Rodriguez</p>
-  </UContainer> -->
-  <UContainer class="">
-    <ul class="flex space-x-4">
-      <li>
-        <a href="https://github.com" target="_blank">
-          <NuxtUiIcon name="github" class="text-white" />
-          GitHub
-        </a>
-      </li>
-      <li>
-        <a href="https://leetcode.com" target="_blank">
-          <NuxtUiIcon name="leetcode" class="text-white" />
-          LeetCode
-        </a>
-      </li>
-      <li>
-        <a href="https://codewars.com" target="_blank">
-          <NuxtUiIcon name="codewars" class="text-white" />
-          CodeWars
-        </a>
-      </li>
-      <li>
-        <a href="https://linkedin.com" target="_blank">
-          <NuxtUiIcon name="linkedin" class="text-white" />
-          LinkedIn
-        </a>
-      </li>
-    </ul>
-  </UContainer>
+  <footer
+    class="py-20 sm:py-32 border-t border-solid border-violet-950 flex flex-col gap-4 sm:gap-8 justify-center items-center"
+  >
+    <p class="px-4 py-2 font-medium">Connect with me &darr;</p>
+    <div class="flex flex-col gap-4 items-center justify-center">
+      <p><b class="pr-2">Email</b> luis01.ro@gmail.com</p>
+      <p>
+        <b class="pr-2">GitHub</b>
+        <a href="https://github.com/Lucho2027" target="_blank" class=""
+          >Lucho2027<sup class=""
+            ><span class="text-xs scale-75 pl-0.5"
+              ><i class="fa-solid fa-arrow-up-right-from-square text-xs scale-[75%]" /></span></sup
+        ></a>
+      </p>
+      <p>
+        <b class="pr-2">LinkedIn</b>
+        <a href="www.linkedin.com/in/luisgrodriguezs" target="_blank" class=""
+          >luisgrodriguezs<sup class=""
+            ><span class="text-xs scale-75 pl-0.5"
+              ><i class="fa-solid fa-arrow-up-right-from-square text-xs scale-[75%]" /></span></sup
+        ></a>
+      </p>
+    </div>
+  </footer>
 </template>
