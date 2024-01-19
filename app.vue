@@ -1,14 +1,21 @@
 <template>
-  <div>
+  <div class="container relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen">
     <Header />
-    <div
-      class="container relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen text-primary-500 dark:text-primary-400 bg-gray-100 dark:bg-gray-900"
-    >
-      <NuxtPage />
-    </div>
+    <NuxtPage />
     <Footer />
   </div>
+  <NuxtParticles id="tsparticles" @load="onLoad" url="/particles.json"></NuxtParticles>
 </template>
+<script setup lang="ts">
+import type { Container } from 'tsparticles-engine';
+
+const onLoad = (container: Container) => {
+  // Do something with the container
+  container.pause();
+  setTimeout(() => container.play(), 2000);
+};
+</script>
+
 <style>
 .page-enter-active,
 .page-leave-active {
@@ -20,6 +27,3 @@
   filter: blur(1rem);
 }
 </style>
-<script>
-//class="h-screen place-content-center text-primary-500 dark:text-primary-400 bg-gray-100 dark:bg-gray-900
-</script>
