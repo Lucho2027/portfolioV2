@@ -18,11 +18,11 @@ const isDark = computed({
         <NuxtLink to="/">
           <h1 class="font-large hidden sm:flex">
             <b class="font-extrabold font-montserrat">Luis</b>
-            <span class="font-roboto">Rodriguez</span>
+            <span class="font-roboto">Code</span>
           </h1>
           <h1 class="font-large felx sm:hidden">
             <b class="font-extrabold font-montserrat">L</b>
-            <span class="font-roboto">R</span>
+            <span class="font-roboto">C</span>
           </h1>
         </NuxtLink>
         <!-- <ClientOnly>
