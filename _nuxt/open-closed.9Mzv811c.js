@@ -1,0 +1,1 @@
+import{n as i,i as l}from"./entry.VJkcEQ3a.js";let o=Symbol("Context");var t=(n=>(n[n.Open=1]="Open",n[n.Closed=2]="Closed",n[n.Closing=4]="Closing",n[n.Opening=8]="Opening",n))(t||{});function u(){return r()!==null}function r(){return i(o,null)}function s(n){l(o,n)}export{u as C,s as c,t as l,r as p};
