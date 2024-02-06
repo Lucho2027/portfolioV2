@@ -13,25 +13,35 @@ const isDark = computed({
 <template>
   <div>
     <div class="gap-2">
-      <h2 class="font-semibold font-lato text-4xl sm:text-5xl md:text-6xl mt-8">
-        Hi! I'm <span class="font-montserrat text-primary-400">Luis</span>, a<br />
+      <h2 class="font-semibold font-lato text-4xl sm:text-5xl md:text-6xl mt-20">
+        Hello! I'm <span class="font-montserrat text-primary-400">Luis</span>, a<br />
         <span class="font-montserrat text-primary-400">Full Stack</span>
         Developer
       </h2>
       <p class="text-base font-lato sm:text-lg md:text-xl mt-4">
-        passionate about
-        <span class="text-primary-400">VueJS/Nuxt</span> for front end and most of my experience is with
-        <span class="text-primary-400">NodeJS & PostgreSQL</span>
-        for back ends. Constantly evolving, I'm on a mission to refine my craft and create seamless digital experiences.
+        with a keen interest in
+        <span class="text-primary-400">VueJS/Nuxt</span>, specializing in crafting smooth user experiences. I bring a
+        solid foundation in <span class="text-primary-400"> NodeJS & PostgreSQL</span> for back-end development,
+        ensuring seamless transitions from concept to production.
       </p>
-      <div class="mt-4">
-        <UButton
-          icon="i-heroicons-envelope-solid"
-          :color="isDark ? 'primary' : 'cool'"
-          variant="solid"
-          aria-label="Theme"
-          ><a href="mailto:luis01.ro@gmail.com" target="_blank">Let's get in touch</a></UButton
-        >
+      <div class="mt-4 flex text-2xl sm:flex-row flex-col gap-4">
+        <div>
+          <UButton
+            icon="i-heroicons-envelope-solid"
+            :color="isDark ? 'gray' : 'primary'"
+            variant="solid"
+            aria-label="Theme"
+            ><a href="mailto:luis01.ro@gmail.com" target="_blank">Let's Connect</a></UButton
+          >
+        </div>
+        <div class="flex justify-center align-center item-center gap-6">
+          <UButton icon="i-mdi-github-face" :color="isDark ? 'gray' : 'primary'" variant="solid" aria-label="Theme"
+            ><a href="https://github.com/Lucho2027" target="_blank" class="">GitHub</a></UButton
+          >
+          <UButton icon="i-mdi-linkedin" :color="isDark ? 'gray' : 'primary'" variant="solid" aria-label="Theme"
+            ><a href="https://www.linkedin.com/in/luisgrodriguezs" target="_blank" class="">LinkedIn</a></UButton
+          >
+        </div>
       </div>
     </div>
   </div>

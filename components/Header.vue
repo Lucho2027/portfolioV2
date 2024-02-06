@@ -40,19 +40,11 @@ const isDark = computed({
           </template>
         </ClientOnly> -->
       </div>
-      <div class="sm:flex items-center gap-4 hidden">
-        <UButton
-          icon="i-heroicons-envelope-solid"
-          :color="isDark ? 'gray' : 'primary'"
-          variant="ghost"
-          aria-label="Theme"
-          ><a href="mailto:luis01.ro@gmail.com" target="_blank">Get in touch</a></UButton
-        >
-      </div>
+      <div class="sm:flex items-center gap-4 hidden"></div>
       <div class="sm:hidden flex content-center">
         <a href="mailto:luis01.ro@gmail.com" target="_blank">
           <UButton
-            icon="i-heroicons-envelope-solid"
+            icon="i-mdi-email-outline"
             :color="isDark ? 'white' : 'white'"
             variant="ghost"
             aria-label="Theme"

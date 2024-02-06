@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', 'nuxt-particles'],
   ui: {
     global: true,
-    icons: ['heroicons']
+    icons: ['heroicons', 'mdi']
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }

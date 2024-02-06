@@ -13,26 +13,33 @@ const isDark = computed({
 <template>
   <footer class="sticky p-2 z-[10] bottom-0 duration-200 text-center px-6">
     <div class="hidden sm:flex">
-      <div class="flex gap-4 items-center w-full justify-center">
-        <p><b class="pr-2">Email</b> luis01.ro@gmail.com</p>
+      <!-- <div class="flex gap-4 items-center w-full justify-center">
         <p>
-          <b class="pr-2">GitHub</b>
           <a href="https://github.com/Lucho2027" target="_blank" class=""
-            >Lucho2027<sup class=""><span class="text-xs scale-75 pl-0.5"></span></sup
+            ><UButton
+              icon="i-mdi-github-face"
+              :color="isDark ? 'white' : 'white'"
+              variant="ghost"
+              aria-label="Theme"
+            ></UButton
           ></a>
         </p>
         <p>
-          <b class="pr-2">LinkedIn</b>
           <a href="https://www.linkedin.com/in/luisgrodriguezs" target="_blank" class=""
-            >luisgrodriguezs<sup class=""><span class="text-xs scale-75 pl-0.5"></span></sup
+            ><UButton
+              icon="i-mdi-linkedin"
+              :color="isDark ? 'white' : 'white'"
+              variant="ghost"
+              aria-label="Theme"
+            ></UButton
           ></a>
         </p>
-      </div>
+      </div> -->
     </div>
-    <div class="flex w-full place-content-between sm:hidden">
+    <!-- <div class="flex w-full place-content-between sm:hidden">
       <a href="https://github.com/Lucho2027" target="_blank" class=""
         ><UButton
-          icon="i-heroicons-envelope-solid"
+          icon="i-mdi-github-face"
           :color="isDark ? 'white' : 'white'"
           variant="ghost"
           aria-label="Theme"
@@ -42,13 +49,8 @@ const isDark = computed({
         ><UButton icon="i-mdi-linkedin" :color="isDark ? 'white' : 'white'" variant="ghost" aria-label="Theme"></UButton
       ></a>
       <a href="sms:+13476057053" target="_blank" class=""
-        ><UButton
-          icon="i-heroicons-phone"
-          :color="isDark ? 'white' : 'white'"
-          variant="ghost"
-          aria-label="Theme"
-        ></UButton
+        ><UButton icon="i-mdi-phone" :color="isDark ? 'white' : 'white'" variant="ghost" aria-label="Theme"></UButton
       ></a>
-    </div>
+    </div> -->
   </footer>
 </template>
