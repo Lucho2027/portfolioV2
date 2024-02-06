@@ -12,17 +12,15 @@ const isDark = computed({
 </script>
 <template>
   <div>
-    <div class="gap-2">
+    <div class="flex gap-8 flex-col">
       <h2 class="font-semibold font-lato text-4xl sm:text-5xl md:text-6xl mt-20">
         Hello! I'm <span class="font-montserrat text-primary-400">Luis</span>, a<br />
         <span class="font-montserrat text-primary-400">Full Stack</span>
         Developer
       </h2>
       <p class="text-base font-lato sm:text-lg md:text-xl mt-4">
-        with a keen interest in
-        <span class="text-primary-400">VueJS/Nuxt</span>, specializing in crafting smooth user experiences. I bring a
-        solid foundation in <span class="text-primary-400"> NodeJS & PostgreSQL</span> for back-end development,
-        ensuring seamless transitions from concept to production.
+        Crafting Tomorrow's Digital Experiences: A Fullstack Developer's Journey with
+        <span class="text-primary-400">Vue/NuxtJS</span>, React, and Beyond...
       </p>
       <div class="mt-4 flex text-2xl sm:flex-row flex-col gap-4">
         <div>
