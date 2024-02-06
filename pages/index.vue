@@ -12,7 +12,7 @@ const isDark = computed({
 </script>
 <template>
   <div>
-    <div class="flex gap-8 flex-col">
+    <div class="flex gap-4 flex-col">
       <h2 class="font-semibold font-lato text-4xl sm:text-5xl md:text-6xl mt-20">
         Hello! I'm <span class="font-montserrat text-primary-400">Luis</span>, a<br />
         <span class="font-montserrat text-primary-400">Full Stack</span>
@@ -29,16 +29,28 @@ const isDark = computed({
             :color="isDark ? 'gray' : 'primary'"
             variant="solid"
             aria-label="Theme"
-            ><a href="mailto:luis01.ro@gmail.com" target="_blank">Let's Connect</a></UButton
+            to="mailto:luis01.ro@gmail.com"
+            target="_blank"
+            >Let's Connect</UButton
           >
         </div>
         <div class="flex justify-center align-center item-center gap-6">
-          <UButton icon="i-mdi-github-face" :color="isDark ? 'gray' : 'primary'" variant="solid" aria-label="Theme"
-            ><a href="https://github.com/Lucho2027" target="_blank" class="">GitHub</a></UButton
-          >
-          <UButton icon="i-mdi-linkedin" :color="isDark ? 'gray' : 'primary'" variant="solid" aria-label="Theme"
-            ><a href="https://www.linkedin.com/in/luisgrodriguezs" target="_blank" class="">LinkedIn</a></UButton
-          >
+          <UButton
+            icon="i-mdi-github-face"
+            :color="isDark ? 'gray' : 'primary'"
+            variant="solid"
+            aria-label="Theme"
+            to="https://github.com/Lucho2027"
+            target="_blank"
+          ></UButton>
+          <UButton
+            icon="i-mdi-linkedin"
+            :color="isDark ? 'gray' : 'primary'"
+            variant="solid"
+            aria-label="Theme"
+            to="https://www.linkedin.com/in/luisgrodriguezs"
+            target="_blank"
+          ></UButton>
         </div>
       </div>
     </div>
