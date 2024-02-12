@@ -1,5 +1,23 @@
 <script setup lang="ts">
 const colorMode = useColorMode();
+const route = useRoute();
+const links = [
+  {
+    label: 'Home',
+    icon: 'i-mdi-home-outline',
+    to: '/'
+  },
+  {
+    label: 'About',
+    icon: 'i-mdi-account-badge-outline',
+    to: '/about'
+  },
+  {
+    label: 'Projects',
+    icon: 'i-mdi-application-brackets',
+    to: '/projects'
+  }
+];
 
 const isDark = computed({
   get() {
@@ -27,30 +45,11 @@ const isDark = computed({
             <span class="font-roboto text-primary">C</span>
           </h1>
         </NuxtLink>
-        <!-- <ClientOnly>
-          <UButton
-            :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
-            :color="isDark ? 'white' : 'primary'"
-            variant="ghost"
-            aria-label="Theme"
-            @click="isDark = !isDark"
-          />
-          <template #fallback>
-            <div class="w-8 h-8" />
-          </template>
-        </ClientOnly> -->
       </div>
-      <div class="sm:flex items-center gap-4 hidden"></div>
-      <div class="sm:hidden flex content-center">
-        <a href="mailto:luis01.ro@gmail.com" target="_blank">
-          <UButton
-            icon="i-mdi-email-outline"
-            :color="isDark ? 'white' : 'white'"
-            variant="ghost"
-            aria-label="Theme"
-          ></UButton>
-        </a>
-      </div>
+
+      <!-- <div class="sm:flex items-center gap-4 hidden">
+        <UHorizontalNavigation class="border-b border-gray-200 dark:border-gray-800" :links="links" />
+      </div> -->
     </div>
   </header>
 </template>

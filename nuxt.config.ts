@@ -7,6 +7,15 @@ export default defineNuxtConfig({
     icons: ['heroicons', 'mdi']
   },
   app: {
+    head: {
+      title: 'Luis Code Craft',
+      meta: [
+        { name: 'description', content: 'My corner of the web to showcase my skills.' },
+        { property: 'og:title', content: `'Luis Code Craft'` }
+      ],
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1'
+    },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   css: ['@/assets/css/main.css'],
