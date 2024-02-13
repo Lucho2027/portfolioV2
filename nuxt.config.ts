@@ -11,7 +11,8 @@ export default defineNuxtConfig({
       title: 'Luis Code Craft',
       meta: [
         { name: 'description', content: 'My corner of the web to showcase my skills.' },
-        { property: 'og:title', content: `'Luis Code Craft'` }
+        { property: 'og:title', content: `Luis Code Craft` },
+        { property: 'og:image', content: 'https://i.imgur.com/fYChfvh.jpg' }
       ],
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1'
