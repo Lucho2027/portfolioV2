@@ -1,7 +1,7 @@
 <template>
   <div class="z-[10]">
     <UContainer> ABOUT</UContainer>
-    <UContainer class="border rounded-lg p-2 text-xs">
+    <UContainer class="border rounded-lg p-2 text-xs bg-green-600 bg-opacity-25">
       Hey there! I'm a Full-Stack Developer fueled by a teenage curiosity that turned into a passion for technology.
       From building and maintaining computers to creating dynamic digital experiences, my journey has been a thrilling
       ride. I'm eager to bring my energy and passion to an all-star developer team, tackling challenges and innovating

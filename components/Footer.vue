@@ -13,7 +13,7 @@ const isDark = computed({
 <template>
   <footer class="sticky p-2 z-[10] bottom-0 duration-200 text-center px-6">
     <div class="hidden sm:flex">
-      <!-- <div class="flex gap-4 items-center w-full justify-center">
+      <div class="flex gap-4 items-center w-full justify-center">
         <p>
           <a href="https://github.com/Lucho2027" target="_blank" class=""
             ><UButton
@@ -34,9 +34,9 @@ const isDark = computed({
             ></UButton
           ></a>
         </p>
-      </div> -->
+      </div>
     </div>
-    <!-- <div class="flex w-full place-content-between sm:hidden">
+    <div class="flex w-full place-content-between sm:hidden">
       <a href="https://github.com/Lucho2027" target="_blank" class=""
         ><UButton
           icon="i-mdi-github-face"
@@ -51,6 +51,6 @@ const isDark = computed({
       <a href="sms:+13476057053" target="_blank" class=""
         ><UButton icon="i-mdi-phone" :color="isDark ? 'white' : 'white'" variant="ghost" aria-label="Theme"></UButton
       ></a>
-    </div> -->
+    </div>
   </footer>
 </template>

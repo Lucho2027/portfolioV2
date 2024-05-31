@@ -1,5 +1,18 @@
+<script setup lang="ts">
+import type { Container } from '@tsparticles/engine';
+const colorMode = useColorMode();
+
+const onLoad = (container: Container) => {
+  container.pause();
+  setTimeout(() => container.play(), 2000);
+};
+const isDark = computed(() => {
+  return colorMode.value === 'dark' ? 'dark' : 'light';
+});
+console.log('');
+</script>
 <template>
-  <div class="container relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen">
+  <div>
     <Header />
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:py-14 p-4 h-[85vh]">
       <div class="z-[10] flex flex-col lg:justify-center text-center lg:text-left lg:ml-20 gap-6 md:gap-8 lg:gap-10">
@@ -9,17 +22,9 @@
 
     <Footer />
   </div>
-  <NuxtParticles id="tsparticles" @load="onLoad" url="/particles.json"></NuxtParticles>
+  <NuxtParticles v-if="isDark === 'dark'" id="tsparticles" @load="onLoad" url="/particlesDark.json"></NuxtParticles>
+  <NuxtParticles v-else id="tsparticles" @load="onLoad" url="/particlesLight.json"></NuxtParticles>
 </template>
-<script setup lang="ts">
-import type { Container } from 'tsparticles-engine';
-
-const onLoad = (container: Container) => {
-  // Do something with the container
-  container.pause();
-  setTimeout(() => container.play(), 2000);
-};
-</script>
 
 <style>
 .page-enter-active,

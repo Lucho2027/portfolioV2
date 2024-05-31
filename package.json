@@ -30,6 +30,10 @@
   },
   "dependencies": {
     "@iconify-json/mdi": "^1.1.64",
-    "@nuxt/ui": "^2.11.1"
+    "@nuxt/ui": "^2.11.1",
+    "@tresjs/cientos": "^3.8.0",
+    "@tresjs/nuxt": "^2.1.1",
+    "@tresjs/post-processing": "^0.7.0",
+    "three": "^0.161.0"
   }
 }
