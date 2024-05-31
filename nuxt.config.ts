@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', 'nuxt-particles', '@tresjs/nuxt'],
+  modules: ['@nuxt/ui', 'nuxt-particles'],
   ui: {
     global: true,
     icons: ['heroicons', 'mdi']
