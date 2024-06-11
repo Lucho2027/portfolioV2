@@ -7,18 +7,14 @@ const isDark = computed(() => {
 </script>
 <template>
   <section>
-    <div class="absolute top-[10%] sm:top-[16%] lg:top-[24%] flex flex-col items-start z-10">
+    <div class="absolute top-[10%] sm:top-[16%] lg:top-[24%] flex items-start z-10">
       <div class="flex-1 lg:mb-0">
         <h1
           class="font-medium text-[20px] xs:text-[25px] sm:text-[34px] md:text-[40px] lg:text-[50px] 2xl:text-[90px] leading-[110px] 2xl:leading-[160px]"
         >
-          Hello! I'm <span class="font-montserrat text-primary-400">Luis</span>, a<br />
+          Hello! I'm <span class="font-medium font-montserrat text-primary-400">Luis</span>, a<br />
+          <span class="font-medium font-montserrat text-primary-400">Full Stack</span> Developer
         </h1>
-        <h2
-          class="font-medium text-[20px] xs:text-[25px] sm:text-[34px] md:text-[40px] lg:text-[50px] 2xl:text-[90px] leading-[110px] 2xl:leading-[160px]"
-        >
-          <span class="font-montserrat text-primary-400">Full Stack</span> Developer
-        </h2>
       </div>
       <div class="flex-1 flex justify-start lg:justify-end">
         <div class="font-bold text-[20px] sm:text-[30px] md:text-[36px] 2xl:text-[46px] text-left">
@@ -60,6 +56,6 @@ const isDark = computed(() => {
         </div>
       </div>
     </div>
-    <AstronautContainer class="z-10 relative" />
+    <AstronautContainer class="z-9 relative" />
   </section>
 </template>
