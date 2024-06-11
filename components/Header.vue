@@ -30,7 +30,7 @@ const isDark = computed({
 </script>
 
 <template>
-  <header class="sticky p-2 z-[10] top-0 duration-200 px-6">
+  <header class="sticky p-2 z-30 top-0 duration-200 px-6">
     <div class="flex items-center justify-between">
       <div class="flex w-full gap-2 align-text-baseline">
         <NuxtLink to="/">
@@ -50,7 +50,7 @@ const isDark = computed({
       <div class="sm:flex items-center gap-4">
         <ClientOnly>
           <UButton
-            :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
+            :icon="isDark ? 'i-heroicons-sun-20-solid' : 'i-heroicons-sun-20-solid'"
             color="gray"
             variant="ghost"
             aria-label="Theme"
@@ -60,7 +60,6 @@ const isDark = computed({
             <div class="w-8 h-8" />
           </template>
         </ClientOnly>
-        <!-- <UHorizontalNavigation class="border-b border-gray-200 dark:border-gray-800" :links="links" /> -->
       </div>
     </div>
   </header>

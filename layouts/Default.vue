@@ -9,21 +9,17 @@ const onLoad = (container: Container) => {
 const isDark = computed(() => {
   return colorMode.value === 'dark' ? 'dark' : 'light';
 });
-console.log('');
 </script>
 <template>
   <div>
     <Header />
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:py-14 p-4 h-[85vh]">
-      <div class="z-[10] flex flex-col lg:justify-center text-center lg:text-left lg:ml-20 gap-6 md:gap-8 lg:gap-10">
-        <slot />
-      </div>
-    </div>
-
-    <Footer />
+    <UContainer>
+      <slot />
+    </UContainer>
+    <!-- <Footer /> -->
+    <NuxtParticles v-if="isDark === 'dark'" id="tsparticles" @load="onLoad" url="/particlesDark.json" class="-z-50" />
+    <NuxtParticles v-else id="tsparticles" @load="onLoad" url="/particlesLight.json" class="-z-50" />
   </div>
-  <NuxtParticles v-if="isDark === 'dark'" id="tsparticles" @load="onLoad" url="/particlesDark.json"></NuxtParticles>
-  <NuxtParticles v-else id="tsparticles" @load="onLoad" url="/particlesLight.json"></NuxtParticles>
 </template>
 
 <style>

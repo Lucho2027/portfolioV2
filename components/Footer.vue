@@ -11,7 +11,7 @@ const isDark = computed({
 });
 </script>
 <template>
-  <footer class="sticky p-2 z-[10] bottom-0 duration-200 text-center px-6">
+  <footer class="sticky p-2 z-30 bottom-0 duration-200 text-center px-6">
     <div class="hidden sm:flex">
       <div class="flex gap-4 items-center w-full justify-center">
         <p>
