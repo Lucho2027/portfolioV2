@@ -2,10 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui', 'nuxt-particles', '@tresjs/nuxt'],
+
   ui: {
-    global: true,
+    global: false,
     icons: ['heroicons', 'mdi']
   },
+
   app: {
     head: {
       title: 'Luis Code Craft',
@@ -19,9 +21,14 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
+
   css: ['@/assets/css/main.css'],
+
   particles: {
     mode: 'full', // 'full' | 'slim' | 'basic' | 'custom'
     lazy: true
-  }
+  },
+
+  compatibilityDate: '2025-01-07'
 });
+
