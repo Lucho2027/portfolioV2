@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 const spaceManRef = ref();
-const { animations, scene } = await useGLTF('/spaceManFalling.glb');
+const { animations, scene, group } = await useGLTF('/spaceManFalling.glb');
 
-onMounted(async () => {
+watchEffect(async () => {
   if (!spaceManRef.value) return;
   const { actions } = await useAnimations(animations, spaceManRef);
   actions['Idle'].play();
